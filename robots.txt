@@ -1,0 +1,54 @@
+# Robots.txt for Sweet Bean Cafe
+# Optimized for SEO and search engine crawling
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specifically allow important pages for indexing
+Allow: /index.html
+Allow: /coffee-menu-near-me.html
+Allow: /caramel-cappuccino-coffee-near-me.html
+
+# Allow access to CSS and JS files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block access to sensitive or unnecessary files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /.git/
+Disallow: /backup/
+Disallow: *.log$
+Disallow: *.tmp$
+
+# Allow specific search engine bots with enhanced permissions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Block problematic or spam bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location for search engines
+Sitemap: https://ehniceone.github.io/fugayee/sitemap.xml
+
+# Additional sitemap for specific content types
+Sitemap: https://ehniceone.github.io/fugayee/sitemap-images.xml
